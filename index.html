@@ -166,7 +166,7 @@
         return;
       }
       try {
-        const res = await fetch(`/.netlify/functions/getcamper?id=${userId}`);
+        const res = await fetch(`/.netlify/functions/getamper?id=${userId}`);
         const json = await res.json();
         if (!res.ok) {
           document.getElementById("loading").textContent = json.error || "找不到资料，请联络主办方。";
